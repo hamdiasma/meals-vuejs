@@ -13,3 +13,20 @@ export function getMealDetailsAction({commit},id){
         commit('getMealsDetailMutation', data?.meals[0])
     })
 }
+
+export function getMealByLettersAction({commit},letter){
+    axiosClient(`search.php?f=${letter}`).then(({data})=>{
+        commit('getMealsLettersMutation', data?.meals)
+    })
+}
+export function getMealBuIngrediensAction({commit},ingredient){
+    axiosClient(`filter.php?i=${ingredient}`).then(({data})=>{
+        commit('getMealsIngrediensMutation', data?.meals)
+    })
+}
+export function getIensAction({commit}){
+    axiosClient(`list.php?i=list`).then(({data})=>{
+        commit('getIngrediensMutation', data?.meals)
+    })
+}
+

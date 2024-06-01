@@ -1,13 +1,5 @@
 <template>
-<div class="flex flex-col p-8 items-center justify-center">
-    <div class="flex gap-2 mt-2">
-    <router-link v-for="letter of letters" :key="letter" :to="{name:'byLetter',params:{letter}}">
-        {{ letter }}
-    </router-link>
-   </div>
-</div>
- 
-   <pre>{{  }}</pre>
+  Hello
 </template>
 
 <script setup>

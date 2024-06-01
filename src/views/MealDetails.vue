@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="mt-3">
-        <YoutubeBtn :href="detail.strYoutube">Youtube</YoutubeBtn>
+        <YoutubeBtn :href="detail.strYoutube" :color="'red'">Youtube</YoutubeBtn>
         <YoutubeBtn :href="detail.strSource" :color="'green'">View Original Source</YoutubeBtn>
     </div>
    </div>

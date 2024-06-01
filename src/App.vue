@@ -2,6 +2,13 @@
     <router-view />
 </template>
 
-<script setup></script>
+<script setup>
+import { onMounted } from "vue";
+import store from "./store";
+
+onMounted(()=>{
+  store.dispatch("getIensAction")
+})
+</script>
 
 <style scoped></style>

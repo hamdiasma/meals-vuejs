@@ -3,5 +3,8 @@ export default {
         loading:false,
         data:[]
     },
-    mealDetailState:{}
+    mealDetailState:{},
+    serachMealsByLetters:[],
+    serachMealsByIngrediens:[],
+    ingrediensState:[]
 }
